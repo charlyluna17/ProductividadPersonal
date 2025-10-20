@@ -6,7 +6,7 @@ import java.util.List;
 
 public class HorarioService {
 
-    private List<Clase> clases;
+    private final List<Clase> clases;
 
     public HorarioService() {
         clases = new ArrayList<>();

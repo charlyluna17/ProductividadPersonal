@@ -1,5 +1,10 @@
 package modelo.academico;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class Clase {
     private String nombre;
     private String hora;
@@ -11,12 +16,4 @@ public class Clase {
         this.dia = dia;
     }
 
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
-
-    public String getHora() { return hora; }
-    public void setHora(String hora) { this.hora = hora; }
-
-    public String getDia() { return dia; }
-    public void setDia(String dia) { this.dia = dia; }
 }

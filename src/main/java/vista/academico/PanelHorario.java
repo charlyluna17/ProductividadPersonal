@@ -11,11 +11,10 @@ import java.util.List;
 
 public class PanelHorario extends JPanel {
 
-    private JTable tablaHorario;
-    private JScrollPane scrollPane;
-    private HorarioService horarioService;
-    private String[] columnas = {"Hora", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes"};
-    private String[] horas = {"08:00-09:00","09:00-10:00","10:00-11:00","11:00-12:00","12:00-13:00"};
+    private final JTable tablaHorario;
+    private final HorarioService horarioService;
+    private final String[] columnas = {"Hora", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes"};
+    private final String[] horas = {"08:00-09:00","09:00-10:00","10:00-11:00","11:00-12:00","12:00-13:00"};
 
     public PanelHorario(HorarioService horarioService) {
         this.horarioService = horarioService;
@@ -24,7 +23,7 @@ public class PanelHorario extends JPanel {
 
         // Tabla inicial vacía
         tablaHorario = new JTable(new String[5][6], columnas);
-        scrollPane = new JScrollPane(tablaHorario);
+        JScrollPane scrollPane = new JScrollPane(tablaHorario);
         add(scrollPane, BorderLayout.CENTER);
 
         // Botón para agregar clase
