@@ -9,6 +9,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.util.List;
 
+@SuppressWarnings("unused")
 public class PanelHorario extends JPanel {
 
     private final JTable tablaHorario;

@@ -23,7 +23,7 @@ public class HorarioService {
     public void eliminarClase(Clase c) {
         clases.remove(c);
     }
-
+    @SuppressWarnings("unused")
     public void actualizarClase(Clase original, Clase actualizada) {
         int index = clases.indexOf(original);
         if (index != -1) {
