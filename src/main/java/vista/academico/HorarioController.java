@@ -21,7 +21,7 @@ public class HorarioController {
     // Listar todas las clases
     @GetMapping("/listar")
     public List<Clase> listarClases() {
-        return horarioService.obtenerHorario(); // aquí se usa el método correcto
+        return horarioService.obtenerHorario();
     }
 
     // Agregar una nueva clase
